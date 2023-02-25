@@ -1,0 +1,25 @@
+{
+  "JProduct": [
+    {
+      "name": "Milkkkkkkk",
+      "price": "38.99",
+      "description": "Milk is good for you",
+      "quantity": "1",
+      "id": 1
+    },
+    {
+      "name": "water",
+      "price": "350.00",
+      "description": "Water is even better than milk",
+      "quantity": "500",
+      "id": 2
+    },
+    {
+      "name": "Juice",
+      "price": "63.00",
+      "description": "We love Juice",
+      "quantity": "300",
+      "id": 3
+    }
+  ]
+}

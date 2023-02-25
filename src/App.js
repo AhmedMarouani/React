@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, {Component} from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import AddProduct from './components/AddProduct';
+import EditProduct from './components/EditProduct';
+
+export default class App extends Component {
+  render(){
+    return (
+      <>
+      <Router>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={ <Header />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/addproduct' element={<AddProduct />} />
+          <Route path='/editproduct/:id' element={<EditProduct />} />
+        </Routes>
+      </div>
+      </Router>
+      </>
+    );
+  }
+  
 }
 
-export default App;

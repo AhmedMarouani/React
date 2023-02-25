@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+        "fname": "ahmed",
+        "lname": "marouani",
+        "email": "ahmed.marouani@esprit.tn",
+        "password": "aa",
+        "id": 1
+        }
+    ]
+}
